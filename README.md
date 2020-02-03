@@ -1,5 +1,4 @@
-1. Semester 2020 Forår
-======================
+# Første semester foråret 2020
 
 Velkommen til Pers undervisningsmaterialer. Her er de filer og "boilerplates" som du vil møde i undervisningen.
 
