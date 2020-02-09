@@ -1,3 +1,35 @@
 /**
  * fil: css/style.css
  **/
+
+/* Container class */
+#flexible {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse;*/
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+}
+
+#flexible > article {
+    width: 300px;
+    color: chartreuse;
+    background-color: #000;
+    margin: 12px;
+}
+
+/* flex-grow */
+/*
+#aa {
+    flex-grow: 3; 
+    /* flex-shrink: 3;*/
+}*/
+
+
