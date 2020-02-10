@@ -14,3 +14,7 @@ Todos:
 * Better responsive image sizes (optimize for performance in Photoshop).
 * Tablets
 * Screen
+
+## The Images
+
+Need some work in the "digital darkroom". Please optimize all your images in Photoshop or GIMP.
