@@ -1,0 +1,87 @@
+/**
+ * fil: css/style.css
+ * sample: flexbox
+ **/
+
+* {
+ margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #09380d;
+    /*background-image: url(../images/DSC07749.JPG);*/
+    background-image: url(../images/seamlessWater_500x.JPG);
+    background-repeat: repeat;
+    background-size: auto;
+    
+    /* fonts */
+    /* google fonts */
+    @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+    font-family: 'Nunito', sans-serif;
+}
+
+.imgLarge {
+    max-width: 100%;
+}
+
+/* Container class */
+#flexible {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse;*/
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    justify-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+}
+
+/* header */
+header, footer {
+    color: #fff;
+    background-color: #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+#flexible > article {
+    width: 300px;
+    color: chartreuse;
+    background-color: #000;
+    margin: 12px;
+    padding: .5rem;
+}
+
+/* media rules */
+
+@media (min-width:320px)  { 
+    /* Mobile first ==> start your styling here */
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    body {
+        font-size: large;
+    }
+    
+    #flexible > article {
+    width: 100%;
+    color: chartreuse;
+    background-color: #000;
+    /*margin: 12px;*/
+    padding: .5rem;
+    }
+
+    /* Nav: styles here? */
+    
+} /* ... Mobile end ... */
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
