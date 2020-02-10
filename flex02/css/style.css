@@ -25,6 +25,19 @@ body {
     max-width: 100%;
 }
 
+#logo {
+	width: 155px;
+	height: auto;
+}
+
+/* menu */
+/*
+nav > ul {
+	display: flex;
+	background-color: #000;
+	color: #fff;
+}
+*/
 /* Container class */
 #flexible {
     display: flex;

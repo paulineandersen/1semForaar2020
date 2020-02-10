@@ -1,5 +1,7 @@
 # Flex02: Responsive Mockup
 
+This mockup is far from finished, and there are several problems. In the class we will optimize the page, and prepare a mockup for several devices.
+
 * Mobile first
 * Responsive
 * Flexbox layout / grid
@@ -18,3 +20,7 @@ Todos:
 ## The Images
 
 Need some work in the "digital darkroom". Please optimize all your images in Photoshop or GIMP.
+
+## Ico files
+
+Scale your page logo to a 16x16 px .png.
