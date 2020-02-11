@@ -1,0 +1,89 @@
+/**
+ * fil: css/style.css
+ **/
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet");
+
+    
+body {
+    background-color: mistyrose; /* bg farve */
+    color: darksalmon; /* tekst farve */
+    background-image: url(../images/oregano.png);
+    background-size:600px;
+    background-repeat:no-repeat;
+    background-position: right top; 
+    
+    
+
+    
+}
+
+p {
+    color: aliceblue;
+    width: 50%;
+    font-size: 150%;
+    font-family: 'Merriweather', serif; /* skrift tyope */
+    padding-left: 10px; 
+    margin:35px;
+    
+    
+    
+        
+}
+
+#A {
+    color: burlywood;
+    margin-left: auto;
+    position: absolute;
+    top: 150px;
+    left: 437px; 
+    
+}
+
+.B {
+    color: lightsalmon;
+
+}
+
+
+img {
+    width: 600px;
+    position: relative;
+    
+    
+}
+
+.galleri {
+    width:250px;
+    height: auto; 
+    float: right;
+    margin: 5px; 
+    
+}
+
+
+nav ul li a {
+    
+    color: darksalmon;
+    
+
+}
+
+nav ul li a:hover{
+    
+    color: yellow;
+
+}
+
+#billede1 {
+    position: relative;
+    
+}
+
+#id {
+    color: white;
+    position: relative;
+     top: 500px;
+    left: 400px;
+}
+
