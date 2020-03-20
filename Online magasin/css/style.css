@@ -1,0 +1,48 @@
+/* Her er et stylesheet */
+
+body {
+    background-color: #b59bf6;
+    
+}
+p {
+    color: #190325;
+    width: 666px;
+}
+h1 {
+    color: #fff;
+    background-color: #3e1074
+}
+
+h2 {
+    color: #110664;
+    font-size: 20px;
+
+}
+
+h5 {
+    color: #8b81e8;
+}
+img {
+    width: 45%;
+    height: auto; }
+    
+#laura {
+    width: 350px;
+        height: auto;
+}
+
+#zanti {
+    width: 350px;
+        height: auto;
+}
+
+#anis {
+    width: 350px;
+        height: auto;
+}
+
+#ometepe {
+    width: 20%;
+    height: auto;
+    border-radius: 50%; 
+}
