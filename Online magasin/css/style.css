@@ -1,48 +1,77 @@
 /* Her er et stylesheet */
 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
 body {
-    background-color: #b59bf6;
+    background-color: #E2F0FF;
+    background-image: url(images/baggrund.gif); 
+    background-size: cover; 
+}
+
+
+header {
+    background-color: #161E2D; 
+    color: #E2F0FF;
+ }
+
+.logo {
+    size: 50%; 
+}
+
+/* nav styles */
+nav {
+  font-family: 'Playfair Display', serif;
+  background-color: #161E2D;
+}
+nav ul li a {
+  color: #E2F0FF;
+    border: 1px;
+    background-color: #161E2D;
+   font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .3em;
     
 }
+nav ul li a:focus, 
+nav ul li a:hover,
+nav ul li a:active {
+    
+}
+nav ul {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    
+}
+
+main {
+    
+    
+}
+  
+}
+
+footer {
+  font-family: playfair display, serif;
+  background-color: #161E2D;
+}
+    
 p {
-    color: #190325;
+    color: #E2F0FF;
     width: 666px;
 }
 h1 {
-    color: #fff;
-    background-color: #3e1074
+    color: #E2F0FF;
+    font-family: 'playfair display', serif; 
 }
 
-h2 {
-    color: #110664;
-    font-size: 20px;
 
-}
 
-h5 {
-    color: #8b81e8;
-}
-img {
-    width: 45%;
-    height: auto; }
-    
-#laura {
-    width: 350px;
-        height: auto;
-}
-
-#zanti {
-    width: 350px;
-        height: auto;
-}
-
-#anis {
-    width: 350px;
-        height: auto;
-}
-
-#ometepe {
-    width: 20%;
-    height: auto;
-    border-radius: 50%; 
-}
