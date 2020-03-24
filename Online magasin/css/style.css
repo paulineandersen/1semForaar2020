@@ -24,7 +24,6 @@ html {
 }
 
 #baggrund {
-    height: 100%; 
     position: relative;
     background-color: #E2F0FF;
     background-size: cover; 
@@ -38,8 +37,7 @@ html {
 
 
 header {
- 
-    
+ height: 100px; 
 
  }
 
@@ -95,30 +93,9 @@ main {
     
 }
 
-.infographic {
-    display: flex; 
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    
-    
-}
-#ur {
-    width: 300px; 
-    
-}
-
-#bodylotion {
-    width: 200px; 
-}
-
-#velvære {
-   width: 400px;
-
-}
-
-#heart {
-    width: 400px; 
+#infographic {
+    width: 100%;
+    image-orientation: center; 
 }
 
 footer {
@@ -140,5 +117,7 @@ h1 {
     font-family: 'playfair display', serif; 
 }
 
-
-
+#sport {
+    image-orientation: center; 
+    width: 100%; s
+}
