@@ -8,60 +8,127 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#hjem {
+    height: 100%; 
+    position: relative;
     background-color: #E2F0FF;
-    background-image: url(images/baggrund.gif); 
+    background-image: url(images/sea2.gif); 
     background-size: cover; 
+    min-height: 100vh; /* dækker 100% af hvad man ser */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* højden på footer */
+    
+    
+}
+
+#baggrund {
+    height: 100%; 
+    position: relative;
+    background-color: #E2F0FF;
+    background-size: cover; 
+    min-height: 100vh; /* dækker 100% af hvad man ser */
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* højden på footer */
+    
+    
 }
 
 
 header {
-    background-color: #161E2D; 
-    color: #E2F0FF;
+ 
+    
+
  }
 
-.logo {
-    size: 50%; 
+#logo {
+    width: 180px; 
+    padding: 0px;
+    image-orientation: top left; 
 }
 
 /* nav styles */
-nav {
-  font-family: 'Playfair Display', serif;
-  background-color: #161E2D;
-}
+
 nav ul li a {
-  color: #E2F0FF;
-    border: 1px;
-    background-color: #161E2D;
-   font-size: 15px;
-  text-transform: uppercase;
+  color:  #91b4ca;
+
+font-size: 15px; 
+  text-transform: lowercase; 
   letter-spacing: .3em;
+    text-decoration: none; 
+     
     
 }
-nav ul li a:focus, 
-nav ul li a:hover,
-nav ul li a:active {
-    
-}
-nav ul {
+
+
+nav {
+    font-family: 'abril fatface', serif;
     display:flex;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px;
-    list-style-type: none;
+    text-align: right; 
+    justify-content: space-between; 
+
+ 
     
+}
+
+.nav-links {
+    display: flex; 
+    list-style-type: none;
+     flex-direction: row; 
+  
+    
+}
+
+.nav-items {
+    padding-right: 40px; 
+}
+
+#social {
+    height: 10%; 
+    margin-right: 0px; 
 }
 
 main {
     
     
 }
-  
+
+.infographic {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+#ur {
+    width: 300px; 
+    
+}
+
+#bodylotion {
+    width: 200px; 
+}
+
+#velvære {
+   width: 400px;
+
+}
+
+#heart {
+    width: 400px; 
 }
 
 footer {
   font-family: playfair display, serif;
   background-color: #161E2D;
+    color: #fff;
+    position: absolute;
+    bottom: 0;  
+    width: 100%; 
+    
 }
     
 p {
