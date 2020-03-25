@@ -14,11 +14,7 @@ html {
     background-color: #E2F0FF;
     background-image: url(images/sea2.gif); 
     background-size: cover; 
-    min-height: 100vh; /* dækker 100% af hvad man ser */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 100px; /* højden på footer */
+    
     
     
 }
@@ -27,10 +23,6 @@ html {
     position: relative;
     background-color: #E2F0FF;
     background-size: cover; 
-    min-height: 100vh; /* dækker 100% af hvad man ser */
- display: block;
- position: relative;
- padding-bottom: 100px; /* højden på footer */
     
     
 }
@@ -51,7 +43,6 @@ header {
 
 nav ul li a {
   color:  #91b4ca;
-
 font-size: 15px; 
   text-transform: lowercase; 
   letter-spacing: .3em;
@@ -80,7 +71,7 @@ nav {
 }
 
 .nav-items {
-    padding-right: 40px; 
+    padding-right: 40px;
 }
 
 #social {
@@ -102,22 +93,22 @@ footer {
   font-family: playfair display, serif;
   background-color: #161E2D;
     color: #fff;
-    position: absolute;
     bottom: 0;  
     width: 100%; 
     
 }
     
 p {
-    color: #E2F0FF;
+    color: #161E2D; 
     width: 666px;
+    font-family: 'baskerville', serif; 
 }
 h1 {
     color: #E2F0FF;
-    font-family: 'playfair display', serif; 
+    font-family: 'baskerville', serif; 
 }
 
 #sport {
     image-orientation: center; 
-    width: 100%; s
+    width: 100%; 
 }
