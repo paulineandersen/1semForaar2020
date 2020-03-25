@@ -14,16 +14,13 @@ html {
     background-color: #E2F0FF;
     background-image: url(images/sea2.gif); 
     background-size: cover; 
-    
-    
-    
+
 }
 
 #baggrund {
     position: relative;
     background-color: #E2F0FF;
     background-size: cover; 
-    
     
 }
 
@@ -86,29 +83,108 @@ main {
 
 #infographic {
     width: 100%;
-    image-orientation: center; 
+     
 }
 
 footer {
-  font-family: playfair display, serif;
+  font-family: "baskerville", serif;
   background-color: #161E2D;
     color: #fff;
     bottom: 0;  
     width: 100%; 
+    position: fixed;
+  left: 0;
+  text-align: center;
     
 }
     
-p {
+article {
     color: #161E2D; 
-    width: 666px;
     font-family: 'baskerville', serif; 
+    column-count: 3;
+    word-break: inherit; 
+    width: 75%;
 }
 h1 {
-    color: #E2F0FF;
-    font-family: 'baskerville', serif; 
+    color: #161E2D;
+    font-family: 'abril fatface', serif; 
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: #161E2D;
+    font-family: 'baskerville', serif;
+    font-size: 20px;
+}
+
+#byline {
+    color: #161E2D; 
+    font-family: 'baskerville', serif;
+    font-style: italic;
+}
+
+#jakob {
+    width: 20%;
+    height: 20%; 
+}
+
+.artikel {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.fisk_img
+{
+    width: 33%; 
 }
 
 #sport {
-    image-orientation: center; 
-    width: 100%; 
+    width: 100%;  
+}
+
+.vand {
+    text-align: center; 
+}
+
+/* Stylesheet for siden Om Mig */ 
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=emne] {
+  background-color: skyblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+    font-family: "basketville", serif; 
+    color: #161E2D; 
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=emne]:hover {
+  background-color: #161E2D;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    font-family: "basketville", serif; 
+    color: 
+  border-radius: 5px;
+  background-color: #91b4ca;
+  padding: 20px;
 }
