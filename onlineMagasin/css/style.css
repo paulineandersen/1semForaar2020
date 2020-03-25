@@ -147,6 +147,25 @@ h2 {
     text-align: center; 
 }
 
+.aktiv {
+    text-align:left;
+    column-count: 3; 
+    background-color: #161E2D; 
+    color: #DDF3FF;
+}
+
+#h1aktiv {
+    color: #DDF3FF;
+    text-align: left; 
+    background-color: #161E2D;
+    padding-bottom: 0; 
+    margin-bottom: 0
+}
+
+.h2aktiv {
+    color:  #DDF3FF;
+}
+
 /* Stylesheet for siden Om Mig */ 
 
 input[type=text], select, textarea {
@@ -160,7 +179,7 @@ input[type=text], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+/* Send knappen */
 input[type=emne] {
   background-color: skyblue;
   color: white;
@@ -175,7 +194,7 @@ label {
     color: #161E2D; 
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* Laver en mørkere farve når man holder musen over */
 input[type=emne]:hover {
   background-color: #161E2D;
 }
