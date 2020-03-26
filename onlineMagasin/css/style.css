@@ -45,7 +45,7 @@ header {
     image-orientation: top left; 
 }
 
-/* nav styles */
+/* navigation styles */
 
 nav ul li a {
   color:  #91b4ca;
@@ -61,8 +61,8 @@ font-size: 15px;
 nav {
     font-family: 'abril fatface', serif;
     display:flex;
-    text-align: right; 
     justify-content: space-between; 
+    text-align: right; 
 
  
     
@@ -73,7 +73,10 @@ nav {
     list-style-type: none;
      flex-direction: row; 
   
-    
+}
+
+.nav-over {
+    display: flex; 
 }
 
 .nav-items {
@@ -85,12 +88,42 @@ nav {
     margin-right: 0px; 
 }
 
+@media screen and (max-width: 500px) {
+    .nav-links {
+        display: block; 
+        text-align: left; 
+        padding-left: 0;
+    }
+    
+    #hjem {
+        width: 100%; 
+        background-size: auto; 
+    }
+    
+    #sport {
+        margin-top: 120px; 
+    }
+    
+    #infographic {
+        margin-top: 120px;
+    }
+    
+    .fisk_img {
+         display: block; 
+        width: 100%; 
+    }
+    
+    .cfisk_img {
+        text-align: center; 
+    }
+}
 
 main {
     
     
 }
 
+/* styling af footer */
 
 footer {
   font-family: "baskerville", serif;
@@ -180,10 +213,10 @@ h2 {
     justify-content: space-between;
 }
 
-.fisk_img
-{
+.fisk_img {
     width: 33%; 
 }
+    
 
 /* Her ses styles omkring siden Vandsport */
 
