@@ -1,6 +1,5 @@
 /* Her er et stylesheet */
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -42,7 +41,7 @@ header {
 #logo {
     width: 180px; 
     padding: 0px;
-    image-orientation: top left; 
+    
 }
 
 /* navigation styles */
@@ -75,54 +74,127 @@ nav {
   
 }
 
-.nav-over {
-    display: flex; 
-}
-
 .nav-items {
     padding-right: 40px;
 }
 
 #social {
     height: 10%; 
-    margin-right: 0px; 
+    margin-right: 40px; 
 }
+
+/* tilføjer media rules for at gøre sitet responsiv til smartphone */
 
 @media screen and (max-width: 500px) {
     .nav-links {
         display: block; 
-        text-align: left; 
+        text-align: center; 
         padding-left: 0;
+        
     }
+    
+    nav {
+        display: block; 
+        text-align: center; 
+        
+    }
+    
     
     #hjem {
         width: 100%; 
         background-size: auto; 
+        background-repeat: no-repeat; 
+        
     }
     
     #sport {
-        margin-top: 120px; 
+        margin-top: 200px; 
     }
     
     #infographic {
         margin-top: 120px;
     }
     
-    .fisk_img {
-         display: block; 
+    .cfisk_img {
+        text-align: center; 
+        margin-top: 180px;
+    }
+    
+    #social {
+        width: 10%; 
+    }
+    
+    .container {
+        margin-top: 200px; 
+    }
+    
+    .artikel2 {
+        column-count: 1; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #hjem {
+        background-repeat: no-repeat; 
+        background-size: auto; 
+        
+    }
+
+
+.nav-links {
+        display: block; 
+        text-align: center; 
+        padding-left: 0;
+        
+    }
+    
+    nav {
+        display: block; 
+        text-align: center;
+        
+    }
+    
+    #social {
+        width: 10%;
+        
+    }
+    
+    #hjem {
         width: 100%; 
+        background-size: auto; 
+        background-repeat: no-repeat; 
+        
+    }
+    
+    #sport {
+        margin-top: 200px; 
+    }
+    
+    #infographic {
+        margin-top: 180px;
     }
     
     .cfisk_img {
         text-align: center; 
+        margin-top: 180px;
     }
-}
-
-main {
     
+    #social {
+        width: 10%; 
+    }
     
-}
-
+    .container {
+        margin-top: 200px; 
+    }
+    
+    .artikel2 {
+        column-count: 1; 
+    }
+    
+    #logo {
+        padding-bottom:0;
+    }
+    }
 /* styling af footer */
 
 footer {
@@ -288,7 +360,7 @@ input[type=emne]:hover {
 /* Add a background color and some padding around the form */
 .container {
     font-family: "basketville", serif; 
-    color: 
+    color: #fff; 
   border-radius: 5px;
   background-color: #91b4ca;
   padding: 20px;
