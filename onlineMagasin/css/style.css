@@ -6,6 +6,10 @@ html {
 * {
   box-sizing: inherit;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap')s
+       
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Share+Tech|Strait|Vidaloka&display=swap');
 /*  Index har en anden baggrundsbillede, så derfor har body forskellige tags. #Hjem = index.html, #friskfisk = friskfisk.html, #baggrund = resterende undersider */
 #hjem {
     height: 100%; 
