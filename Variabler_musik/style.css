@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Cookie|Patua+One&display=swap');
+
+#jorja {
+    width: 40%; 
+}
+
+.image {
+    text-align: right; 
+    padding-right: 5%; 
+}
+
+h1 {
+    text-align: center; 
+}
+
+:root {
+    --main-bg-color: #FFDFD6; 
+    --header-color: #80706B;
+    --text-color: #94B0A8;
+    --light-text-color: #fff; 
+    
+    
+    
+    --header-font: 'Patua One', cursive;
+    --top-page-font: 'Alegreya', serif;
+    --bottom-page-font: 'Cookie', cursive;
+    
+    --seamless: url(images/seamless.jpg); 
+}
+
+header {
+    background-image: var(--seamless); 
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+    
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--header-color);
+    font-size: 50px;
+}
+
+.toppage {
+    display: flex; 
+    flex-direction: row-reverse;
+     background-image: url(images/seamless2.jpg);
+}
+
+p {
+    font-family: var(--top-page-font);
+    padding-left: 5%; 
+    color: var(--light-text-color); 
+    font-size: 20px;
+}
+
+.new_p {
+    font-family: var(--bottom-page-font);
+    color: var(--text-color);
+    font-size: 30px; 
+   
+}
+
+.navlist {
+    display: flex; 
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: var(--header-font); 
+    font-size: 30px; 
+}
