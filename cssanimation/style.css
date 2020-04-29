@@ -1,0 +1,123 @@
+/* Her er et stylesheet */
+
+body {
+    background-color: lightblue; 
+}
+
+#animation {
+    position: relative; 
+    background-color: yellow;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%;
+    z-index: -1; 
+    
+    /* animation-iteration-count: infinite; <-- hvor mange gange den skal spille */ 
+    /* 
+    animation-direction: reverse; <-- hvilken retning den skal spille, alternate=først forfra og så bagfra */
+  
+    
+    animation-name: sol;
+    animation-duration: 6s; 
+    
+}
+
+@keyframes Jump {
+    0% {
+        top: 0px;
+        left; 0px; 
+    }
+    
+    50% {
+        top: 500px;
+        left: 0px;
+        border-radius: 80%;
+        width: 120px; 
+        height: 90px;
+    }
+    
+    
+    75% {
+        top: 300px;
+        left; 0px; 
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    100% {
+        top: 500px;
+        left: 0px; 
+        border-radius: 80%;
+        width: 120px; 
+        height: 90px;
+    }
+}
+
+
+
+#animation_2 {
+    position: fixed; 
+   
+    width: 100%; 
+    height: 60%;  
+    background-color: darkseagreen; 
+    border-top-left-radius: 30%; 
+    border-top-right-radius: 30%; 
+    margin-top: 200px; 
+    
+    animation-name: bakke;
+    animation-duration: 6s;
+    /* animation-iteration-count: infinite; 
+    animation-direction: reverse; */ 
+    
+    
+}
+
+@keyframes sol {
+    from {
+        top: 0;
+        left: 100px;
+    }
+    
+    to {
+        top: 350px;
+        left: 250px; 
+        background-color: orangered; 
+    }
+}
+
+@keyframes bakke {
+    from {
+        background-color: darkseagreen;
+    }
+    
+    to {
+        background-color: darkgreen; 
+    }
+}
+
+#moon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 lightblue; 
+    
+        animation-name: themoon;
+        animation-duration: 4s;
+        animation-delay: 2s;
+    }
+
+@keyframes themoon {
+    from {
+        box-shadow: 15px 15px 0 0 lightblue;
+       
+        
+    }
+    
+    to {
+        box-shadow: 15px 15px 0 0 white;
+       
+        
+    }
+}

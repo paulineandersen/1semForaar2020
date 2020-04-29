@@ -1,0 +1,203 @@
+/**
+ * Styles more based on a W3 School sample (vide: index.html)
+ * Optimized for semantic markup by Per Thykjær Jensen
+ * date: 20200320
+ **/
+
+/* google fonts (load before anything else!) */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@700&family=Open+Sans:wght@300&family=Spicy+Rice&display=swap');
+
+/** 
+ * usage   
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+**/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+    /* layout colors */
+    --main-bg-color: #fff;
+    --col_1: #fff;
+    --col_2: #fff;
+    --col_3: #fff;
+    --col_4: #fff;
+	--dark: #000;
+    --hell: #fff;
+	
+    /* display */
+    --display: 'Spicy Rice', cursive;
+	
+
+    /* headers */
+    --myHeaders: 'Muli', sans-serif;
+
+    /* text */
+    --text: 'Open Sans', sans-serif;
+	
+	
+	
+    /* textures */
+    /*--nightClub: url(../billeder/club-seamless.JPG);*/
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--dark);
+    font-family: var(--text);
+}
+
+#wrap {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--col_2);
+}
+
+#wrap .menu {
+	width: 25%;
+    text-align: center;
+    background-image: var(--nightClub);
+}
+
+#wrap .menu a {
+    background-color: var(--col_4);
+    display: block;
+    color: var(--dark);
+}
+
+#wrap main {
+	width: 45%;
+}
+
+#wrap .right {
+	width: 25%;
+    margin-top: 7px;
+    /*text-align: center;*/
+    color: var(--dark);
+	background-color: var(--col_1)
+}
+
+/* layout styles */
+header {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--col_2);
+}
+
+footer {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+    background-color: var(--col_1);
+}
+
+/* SEO content exaggerated */
+.keyword {
+    color: red;
+}
+
+h1 {
+    font-family: var(--display);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--myHeaders);
+}
+
+article h2 {
+	text-align: center;
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+    position: relative;
+    top: -130px;
+    font-size: 5rem;
+	font-family: var(--display) ,sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* PS: in mobile first, the mobile is where we begin device optimization */
+
+/* Mobile First */
+
+/**
+ * 1. Begin with the smallest device, e.g. mobile
+ **/
+@media only screen and (max-width:620px) {
+
+	/*
+    body {
+        background-color: var(--col_3);
+        padding: 0px;
+        margin: 0px;
+        font-size: larger;
+    }
+	*/
+    
+    /* headings */
+	/*
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--hell);
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+	*/
+ 
+    /* layout */ 
+	/*
+    #wrap,
+    header,
+    footer,
+    .right,
+    .menu,
+    main,
+    figure,
+    img,
+    p {
+        display: block;
+        width: 100%;
+        padding: 0px;
+        background-color: var(--col_2);
+        color: var(--dark);
+    }
+	*/
+}
+
+
+/**
+ * 2. continue with a larger device, e.g. iPad, tablet
+ **/
+

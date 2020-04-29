@@ -1,0 +1,281 @@
+/* Her er et stylesheet */
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+/* Variabler */
+
+:root {
+    --footer-align: left; 
+    --main-text: /** kan ikke finde den skriftype som er i PS **/
+}
+
+body {
+    background-color: beige; 
+}
+
+.nav_ul {
+    list-style-type: none; 
+   text-align: right; 
+}
+
+footer {
+   background-color: gray; 
+    color: white; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.aabningstider {
+    list-style-type: none; 
+    text-align: var(--footer-align); 
+}
+
+h4 {
+    text-align: var(--footer-align);  
+    font-style: bold; 
+    margin-left: 40px;
+}
+
+.kontakt  {
+    list-style-type: none; 
+    text-align: var(--footer-align); 
+}
+
+/** Til Smartphone **/
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    body {
+        background-color: blue;
+    }
+    
+      header {
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* laver den lille knap man kan krydse af */
+        position: fixed;
+        width: 100%; 
+        z-index: 3; /* header er foran resten */
+        background-color: #fff; 
+        font-family: "baskerville";
+        
+    }
+    
+    header ul {
+         margin: 0;
+        padding: 0;
+        list-style: none; 
+        overflow: hidden;
+        background-color: #fff; 
+    }
+    
+    header li a {
+        display: block; 
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4; 
+        text-decoration: none; 
+    }
+    
+    header li a:hover {
+        background-color: #f4f4f4;
+    }
+    
+   header .logo {
+        display: block; 
+        float: left;
+        font-size: 2em; 
+       padding: 10px 20px;
+       text-decoration: none;
+    }
+	
+    header .nav_ul {
+        clear: both; 
+        max-height: 0;
+        transition: max-height .2s ease-out; 
+    }
+    
+    header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right; 
+        padding: 28px 20px; 
+        position: relative;
+        user-select: none; 
+    }
+    
+    /* laver en streg, som bliver til burgerbar ikon */
+    
+    header .menu-icon .navicon {
+        background: #333;
+      display: block;
+        height: 2px; 
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px; 
+    }
+    
+    header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    /* lav en streg mere i ikonet */
+   
+    header .menu-icon .navicon:before {
+        top: 5px; 
+    }
+    
+    header .menu-icon .navicon:after {
+        top: -5px; 
+        
+    }
+    
+    /* når man trykker på de to streger kommer menubaren */ 
+      header .menuknap {
+        display: none;
+    }
+    
+    header .menuknap:checked ~ .nav_ul {
+        max-height: 240px;
+    }
+  
+    
+    header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:before, header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0; 
+    }
+    
+    
+}
+
+/** Til Tablet **/
+    
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    body {
+        background-color: red;
+    }
+    
+     header {
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* laver den lille knap man kan krydse af */
+        position: fixed;
+        width: 100%; 
+        z-index: 3; /* header er foran resten */
+        background-color: #fff; 
+        font-family: "baskerville";
+        
+    }
+    
+    header ul {
+         margin: 0;
+        padding: 0;
+        list-style: none; 
+        overflow: hidden;
+        background-color: #fff; 
+    }
+    
+    header li a {
+        display: block; 
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4; 
+        text-decoration: none; 
+    }
+    
+    header li a:hover {
+        background-color: #f4f4f4;
+    }
+    
+   header .logo {
+        display: block; 
+        float: left;
+        font-size: 2em; 
+       padding: 10px 20px;
+       text-decoration: none;
+    }
+	
+    header .nav_ul {
+        clear: both; 
+        max-height: 0;
+        transition: max-height .2s ease-out; 
+    }
+    
+    header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right; 
+        padding: 28px 20px; 
+        position: relative;
+        user-select: none; 
+    }
+    
+    /* laver en streg, som bliver til burgerbar ikon */
+    
+    header .menu-icon .navicon {
+        background: #333;
+      display: block;
+        height: 2px; 
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px; 
+    }
+    
+    header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    /* lav en streg mere i ikonet */
+   
+    header .menu-icon .navicon:before {
+        top: 5px; 
+    }
+    
+    header .menu-icon .navicon:after {
+        top: -5px; 
+        
+    }
+    
+    /* når man trykker på de to streger kommer menubaren */ 
+      header .menuknap {
+        display: none;
+    }
+    
+    header .menuknap:checked ~ .nav_ul {
+        max-height: 240px;
+    }
+  
+    
+    header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:before, header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0; 
+    }
+}
+
+/** til desktop **/
+@media screen and (min-width: 1024px) and (max-width: 2400px) {
+    body {
+        background-color: yellow; 
+        
+    }
+    
+    .nav_ul {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-end; 
+    }
+    
+    footer {
+        display: flex; 
+    }
+}

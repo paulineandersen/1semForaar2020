@@ -1,0 +1,203 @@
+/**
+ * Exercise: Mobile First / Flexbox
+ **/
+
+/* 0. Generelle variable  */
+:root {
+	/* colors */
+	--resp-bg-col: lightblue;
+	--alt-col: #B24DFF;
+	--col-wh: #fff;
+	--col-bl: #000;
+
+	/* fonts */
+	font-family: sans-serif;
+	font-size: 17px;
+}
+
+/* headings, paragraphs etc. */
+h2,
+h3,
+p {
+	padding-bottom: .4rem;
+    font-family: "baskerville";
+    color: rebeccapurple;
+}
+
+h1, h2, h3 {
+	color: var(--alt-col);
+}
+
+/* images */
+img {
+	max-width: 100%;
+}
+
+/* layout */
+.wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.wrap main {
+	flex-grow: 2;
+	margin: 2rem;
+}
+
+.wrap aside {
+	flex-grow: 1;
+	margin: 2rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	main {
+		background-color: var(--resp-bg-col);
+	}
+
+	/* fonts (size?) */
+    
+    
+    
+    header {
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); /* laver den lille knap man kan krydse af */
+        position: fixed;
+        width: 100%; 
+        z-index: 3; /* header er foran resten */
+        background-color: plum;
+        font-family: "baskerville";
+        color: darksalmon;
+        
+    }
+    
+    header ul {
+         margin: 0;
+        padding: 0;
+        list-style: none; 
+        overflow: hidden;
+        background-color: #fff; 
+    }
+    
+    header li a {
+        display: block; 
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4; 
+        text-decoration: none; 
+    }
+    
+    header li a:hover {
+        background-color: #f4f4f4;
+    }
+    
+   header .logo {
+        display: block; 
+        float: left;
+        font-size: 2em; 
+       padding: 10px 20px;
+       text-decoration: none;
+    }
+	
+    header .menu {
+        clear: both; 
+        max-height: 0;
+        transition: max-height .2s ease-out; 
+    }
+    
+    header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right; 
+        padding: 28px 20px; 
+        position: relative;
+        user-select: none; 
+    }
+    
+    /* laver en streg, som bliver til burgerbar ikon */
+    
+    header .menu-icon .navicon {
+        background: #333;
+      display: block;
+        height: 2px; 
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px; 
+    }
+    
+    header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    /* lav en streg mere i ikonet */
+   
+    header .menu-icon .navicon:before {
+        top: 5px; 
+    }
+    
+    header .menu-icon .navicon:after {
+        top: -5px; 
+        
+    }
+    
+    /* når man trykker på de to streger kommer menubaren */ 
+      header .menuknap {
+        display: none;
+    }
+    
+    header .menuknap:checked ~ .menu {
+        max-height: 240px;
+    }
+  
+    
+    header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:before, header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0; 
+    }
+    
+    
+	/* navigation <nav> */
+	
+
+	nav ul {}
+
+	nav ul li {}
+
+	nav ul li a {}
+
+	
+	/* content area */
+	.wrap {
+		/* end flexbox here */
+		display: block;
+	}
+
+	.wrap main {
+		margin: 1rem;
+	}
+
+	.wrap aside {
+		margin: 1rem;
+	}
+
+	/* images (trick: width 100%) */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+/* Print */
+/* @media print { ... } */
