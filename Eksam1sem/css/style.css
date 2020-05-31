@@ -203,7 +203,6 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle::before {
-  content: ' ';
   display: inline-block;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
@@ -271,7 +270,6 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle2::before {
-  content: ' ';
   display: inline-block;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
@@ -325,6 +323,47 @@ input[type='checkbox'] {
 }
 
 /* Styling til siden Konkurrence */
+
+#gif {
+    width: 100%; 
+}
+
+#navn, #email {
+    font-family: var(--text_font);
+    height: 35px;
+}
+
+#medsmaat {
+    font-size: 10px;
+    margin-top: -10px;
+    font-style: italic; 
+    color: grey; 
+    text-align: center; 
+}
+
+#submit {
+    font-family: var(--h_font);
+    background-color: #E4BE20;
+    border-radius: 40px; 
+    width: 50%; 
+    padding: 5%; 
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    border: 0.5px solid black;
+    margin-bottom: 10%; 
+}
+
+.p_konkurrence {
+    margin: 5%; 
+    text-align: center; 
+}
+
+#fbdeltag {
+    width: 100%; 
+}
+
+
 
 
 /** Til Smartphone **/
@@ -450,13 +489,23 @@ input[type='checkbox'] {
     #svar {
         display: flex;
         flex-direction: column; 
+        margin-right: auto;
+        margin-left: auto; 
+        width: 70%;
+        
+    }
+    
+    #navn, #email {
+        margin-bottom: 20px;
     }
     
     .lbl-toggle, .lbl-toggle2 {
         font-size: 20px;
     }
     
-    
+    #fbdeltag {
+        margin-top: -10%; 
+    }
     
 }
 
@@ -628,6 +677,34 @@ input[type='checkbox'] {
         margin-top: -2%;
     }
     
+    /* Konkurrence siden */
+    
+   #svar {
+        display: flex;
+        flex-direction: column; 
+        margin-right: auto;
+        margin-left: auto; 
+        width: 70%;
+        
+    }
+    
+    #navn, #email {
+        margin-bottom: 20px;
+        height: 50px; 
+        font-size: 20px;
+    }
+    
+    #submit {
+        font-size: 25px; 
+    }
+    
+    #fbdeltag {
+        margin-top: -10%;
+        width: 80%; 
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
+    }
 
 }
 
@@ -719,17 +796,17 @@ input[type='checkbox'] {
         display: flex;
         justify-content: center; 
         font-size: 25px;
-        margin-left: 5%;  
+        margin-left: 10%;  
         
     } 
     
     .footer1, .footer2 {
-        display: flex; 
+        display: flex;
          
     }
     
     .footer_punkt {
-        margin-right: 60px;
+        margin-right: 200px;
         padding-right: 10%;
     }
     
@@ -774,6 +851,63 @@ input[type='checkbox'] {
     
     #knap {
         margin-top: 4%; 
+    }
+    
+    /* Konkurrence siden */
+    
+    #sektion3 {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+    }
+    
+    .pose {
+        width: 30%; 
+    }
+    
+    #svar {
+        display: flex;
+        flex-direction: column;  
+        width: 50%; 
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 10%;
+    }
+    
+    #navn, #email {
+        margin-bottom: 20px;
+        height: 60px; 
+        font-size: 30px;
+        width: 120%; 
+    }
+    
+    #submit {
+        font-size: 30px; 
+        padding-right: 48%; 
+    }
+    
+    .deltag {
+        display: flex; 
+    }
+    
+    #sektion4 {
+        display: flex;
+        flex-direction: column; 
+        width: 50%; 
+        margin-top: 30px;
+    }
+    
+    #medsmaat {
+        font-size: 15px;
+    }
+        
+    }
+    
+    #fbdeltag {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; 
     }
     
 }
