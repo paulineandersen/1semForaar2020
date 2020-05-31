@@ -130,6 +130,13 @@ p {
     font-size: 22px;
 }
 
+#SGS2 {
+    font-family: var(--h_font); 
+    text-align: center; 
+    font-size: 22px;
+}
+
+
 footer {
     left: 0;
     bottom: 0;
@@ -761,14 +768,12 @@ input[type='checkbox'] {
           
     }
     
-    #SGS {
-        font-size: 40px; 
-    }
-    
 
     .liste1 {
-        display: flex; 
-        justify-content: center; 
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 50%;
     }
     
     .konkurrence {
@@ -779,6 +784,10 @@ input[type='checkbox'] {
         font-size: 35px;
         padding: 50px;
         width: 40%; 
+    }
+    
+    #SGS {
+        font-size: 40px; 
     }
     
      h4 {
@@ -832,12 +841,14 @@ input[type='checkbox'] {
     .liste1 {
         display: flex; 
         flex-direction: column; 
+        margin-top: 80px;
     }
     
-    #SGS {
-        margin-left: 55%; 
-        margin-top: -20%;
-        margin-bottom: 20%;
+    #SGS2 {
+        margin-left: 35%; 
+        margin-top: -18%;
+        margin-bottom: 5%;
+        font-size: 40px; 
     }
     
     #sektion2 {
@@ -862,7 +873,8 @@ input[type='checkbox'] {
     }
     
     .pose {
-        width: 30%; 
+        width: 30%;
+        margin-bottom: 10%;
     }
     
     #svar {
