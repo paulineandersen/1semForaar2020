@@ -162,6 +162,170 @@ footer ul li a {
     text-align: center; 
 }
 
+/* Styling til siden Om Produktet */
+
+.pose {
+    width: 50%; 
+    margin-left: auto;
+    margin-right: auto; 
+    display: block; 
+}
+
+#produktinfo {
+    margin: 5%; 
+    text-align: center; 
+}
+
+/* Ingredienser collapsible */
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-family: var(--h_font);
+  font-size: 40px; 
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: black; 
+  background: transparent; 
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #C79331;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.collapsible-content .content-inner {
+  background: #2B529C; 
+    color: #fff; 
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 2%; 
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Næringsindhold collapsible */
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle2 {
+  display: block;
+  font-family: var(--h_font);
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: black; 
+  background: transparent; 
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle2:hover {
+  color: #C79331;
+}
+
+.lbl-toggle2::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+#indhold { 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto; 
+    display: block; 
+}
+
+.collapsible-content2 .content-inner2 {
+  background: #2B529C; 
+    color: #fff; 
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 2%; 
+    width: 60%;
+    height: auto;    
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.collapsible-content2 {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle2:checked + .lbl-toggle2 + .collapsible-content2 {
+  max-height: 100vh;
+}
+
+.toggle2:checked + .lbl-toggle2::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle2:checked + .lbl-toggle2 {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#tryk {
+    text-align: center; 
+}
+
+/* Styling til siden Konkurrence */
+
 
 /** Til Smartphone **/
 @media screen and (min-width: 0px) and (max-width: 500px) {
@@ -286,6 +450,10 @@ footer ul li a {
     #svar {
         display: flex;
         flex-direction: column; 
+    }
+    
+    .lbl-toggle, .lbl-toggle2 {
+        font-size: 20px;
     }
     
     
@@ -430,6 +598,13 @@ footer ul li a {
         font-size: 30px; 
     }
     
+    #knap {
+        width: 80%; 
+        margin-right: auto;
+        margin-left: auto;
+        display: block; 
+    }
+    
 
      .foot_div {
     display: flex;
@@ -452,6 +627,7 @@ footer ul li a {
         font-size: 20px; 
         margin-top: -2%;
     }
+    
 
 }
 
@@ -568,6 +744,36 @@ footer ul li a {
     
     h5 {
         font-size: 20px;
+    }
+    
+    /* Kode til siden Om Produktet */
+    
+    #sektion1 {
+        display: flex; 
+    }
+    
+    .liste1 {
+        display: flex; 
+        flex-direction: column; 
+    }
+    
+    #SGS {
+        margin-left: 55%; 
+        margin-top: -20%;
+        margin-bottom: 20%;
+    }
+    
+    #sektion2 {
+        display: flex; 
+        width: 90%; 
+    }
+    #produktinfo {
+        width: 70%;
+        margin-right: 10%;
+    }
+    
+    #knap {
+        margin-top: 4%; 
     }
     
 }
