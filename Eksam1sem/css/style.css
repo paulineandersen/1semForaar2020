@@ -795,8 +795,8 @@ input[type='checkbox'] {
     
      h4 {
         font-size: 35px;
-        padding: 40px;
-        margin-top: 15%; 
+        margin-left: 20%;
+         margin-right: 20%;
         
     }
     
@@ -845,7 +845,7 @@ input[type='checkbox'] {
     
     #SGS2 {
         margin-left: 35%; 
-        margin-top: -18%;
+        margin-top: -12%;
         margin-bottom: 5%;
         font-size: 40px; 
     }
@@ -863,12 +863,14 @@ input[type='checkbox'] {
         margin-top: 4%; 
     }
     
+    
+    
     /* Konkurrence siden */
     
     #sektion3 {
         display: flex; 
         justify-content: space-around; 
-        align-items: center; 
+        align-items: center;
     }
     
     .pose {
