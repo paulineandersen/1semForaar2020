@@ -1,5 +1,8 @@
 /* Her er et stylesheet */
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -804,9 +807,7 @@ input[type='checkbox'] {
     .foot_div {
         display: flex;
         justify-content: center; 
-        font-size: 25px;
-        margin-left: 10%;  
-        
+        font-size: 25px;  
     } 
     
     .footer1, .footer2 {
@@ -815,13 +816,11 @@ input[type='checkbox'] {
     }
     
     .footer_punkt {
-        margin-right: 200px;
-        padding-right: 10%;
+        margin-right: 100px;
     }
     
     footer ul li a {
         text-decoration: none; 
-        color: black; 
     }
     
     #fb {
@@ -895,7 +894,6 @@ input[type='checkbox'] {
     
     #submit {
         font-size: 30px; 
-        padding-right: 48%; 
     }
     
     .deltag {
