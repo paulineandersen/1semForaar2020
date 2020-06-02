@@ -804,9 +804,14 @@ input[type='checkbox'] {
     
      h4 {
         font-size: 35px;
-        margin-left: 20%;
-         margin-right: 20%;
+        margin-top: 15%; 
         
+    }
+    
+    #h4_konk {
+        margin-left: 20%;
+        margin-right: 20%; 
+        margin-top: 5%; 
     }
     
     h6 {
